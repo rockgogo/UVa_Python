@@ -20,11 +20,9 @@ def UVa_11292(Input_arr, Output_arr):
 		if( Input_arr[i*Input_item+0] == '0\t0'):
 			return Answer
 		n = (Input_arr[i*Input_item+1].split('\t'))
-		for ii in range(len(n)):
-			n[ii] = int(n[ii])
+		n = [int(data) for data in n]
 		m = (Input_arr[i*Input_item+2].split('\t'))
-		for ii in range(len(m)):
-			m[ii] = int(m[ii])
+		m = [int(data) for data in m]
 ############################################################
 		n.sort()
 		m.sort()
